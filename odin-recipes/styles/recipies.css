@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    background-color: lightpink;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    text-decoration: underline;
+    font-size: 50px;
+    text-align: center;
+}

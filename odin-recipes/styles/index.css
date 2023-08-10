@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    background-color: lightblue;
+    box-sizing: border-box;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    font-size: 50px;
+    text-align: center;
+}
+
+.recipesContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cardpic {
+    height: 250px;
+    width: auto;
+    border-radius: 25%;
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+    .recipesContainer {
+        flex-direction: row;
+    }
+}
