@@ -1,0 +1,147 @@
+@font-face {
+    font-family: Fairy;
+    src: url(./font/Fairymuffinroundpop-1GG5e.ttf) format(TrueType);
+}
+
+@font-face {
+    font-family: Pumpkin;
+    src: url(./font/PumpkinMuffin-eZlZg.ttf) format(TrueType);
+}
+
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Heading */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffb6c1;
+}
+
+.title {
+    font-family: pumpkin;
+    font-size: 40px;
+    margin: 20px;
+}
+
+.title a {
+    text-decoration: none;
+    color: black;
+}
+
+.title:hover {
+    text-decoration: underline;
+    color: #4e4e4e;
+    cursor: pointer;
+}
+
+.logo {
+    width: 50px;
+}
+
+/* Nav */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #ffb6c1;
+    font-family: Fairy;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    padding-top: 5px;
+}
+
+nav li {
+    padding: 10px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    text-shadow: 1px 1px #494949;
+    background-color: #f6536cb8;
+    border-radius: 25px 25px 0 0;
+}
+
+nav li.nav-item.active {
+    background-color: #f6536cb8;
+    border-radius: 25px 25px 0 0;
+    cursor: default;
+}
+
+
+/* Main */
+.container {
+    font-family: Fairy;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 50px;
+    gap: 40px;
+    justify-items: center;
+}
+
+.colOne, .colTwo {
+    width: 500px;
+}
+
+.subheadOne, .subheadTwo {
+    text-align: center;
+    margin: 20px;
+}
+
+.paraOne, .paraTwo {
+    font-size: 12px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.paraimgOne, .paraimgTwo {
+    width: 100px;
+    margin-left: 40%;
+}
+
+/* Footer */
+footer {
+    background-color: #ffb6c1;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: pumpkin;
+}
+.copy, .brand {
+    margin: 2px;
+}
+
+.fa-brands {
+    font-size: 15px;
+    padding: 2px;
+}
+
+.fa-brands:hover {
+    background-color: #fc607791;
+} 
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}

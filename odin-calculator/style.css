@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    font-family: 'Montserrat', Arial, sans-serif;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ea00ff, rgb(11, 101, 117));
+}
+
+.calculator {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 500px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120, auto) repeat(5, 100px);
+}
+
+.calculator > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+}
+
+.calculator > button:hover {
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.spantwo {
+    grid-column: span 2;
+}
+
+.display {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.display, .previous {
+    color: rgba(255, 255, 255, .75);
+}
+
+.display, .current {
+    color: white;
+    font-size: 2.5rem;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: underline;
+    font-size: 50px;
+}

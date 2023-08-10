@@ -1,0 +1,237 @@
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.7fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr auto;
+    grid-template-areas: 
+    "sidebar header header header"
+    "sidebar main main main";
+}
+
+/* HEADER */
+header {
+    grid-area: header;
+}
+
+/* HEADER TOP */
+.profilepic {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    margin: 1rem;
+}
+
+.noti {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.3rem;
+}
+
+.noti:hover,
+.searchicon:hover {
+    background-color: #f3f0f0;
+    border-radius: 30%;
+}
+
+.account {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+}
+
+.account .profilepic, .noti {
+    margin-right: 1rem;
+}
+
+.search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.searchbar {
+    background-color: #E2E8F0;
+    border-radius: 0.6rem;
+    border: 0.5px solid lightgray;
+    width: 30rem;
+    height: 1.3rem;
+    padding: 0 40px;
+}
+
+.searchicon {
+    background-color: white;
+    border: none;
+    margin-right: 1.3rem;
+}
+
+/* HEADER BOTTOM */
+.bottom {
+    margin: 0.6rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.profilepic.two {
+    width: 4rem;
+    height: 4rem;
+}
+
+.hello {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hello .msg{
+    margin-right: 0.5rem;
+}
+
+.btn {
+    background-color: #1992D4;
+    color: white;
+    border: none;
+    border-radius: 0.6rem;
+    width: 4.4rem;
+    height: 1.8rem;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* SIDEBAR */
+.sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    background-color: #1992D4;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.dashlogo {
+    padding: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.icons {
+    margin: 5% 10%;
+}
+
+.icons li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icons li .icon {
+    list-style: none;
+    text-decoration: none;
+}
+
+.icons li .material-icons {
+    margin-right: 10px;
+}
+
+/* CONTENT */
+.content {
+    grid-area: main;
+    background-color: #E2E8F0;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    border-left: 4px solid #f0b429;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.title {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    gap: 10px;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.announcementtitle {
+    margin-bottom: 5px;
+}
+
+.card, .announcementcard, .trendingcard {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.info {
+    margin: 10px 0;
+}
+
+.trendingcard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profileaccount {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profilepicthree {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.announcementtext, .nametext, .cardtext {
+    color: rgb(151, 151, 151);
+    font-size: 12px;
+}

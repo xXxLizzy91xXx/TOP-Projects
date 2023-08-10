@@ -1,0 +1,136 @@
+/* 
+    Custom Fonts
+    1. Montserrat
+    2. Norse
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.cdnfonts.com/css/norse');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+}
+
+.containerone {
+    flex: 1;
+    display: flex;
+    background-image: url(img/vincentiu-solomon-ln5drpv_ImI-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.containertwo {
+    flex: 2;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.credits {
+    font-size: 12px;
+    color: white;
+}
+
+.credits > a{
+    text-decoration: none;
+    color: darkgray;
+}
+.credits > a:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+img {
+    width: 20%;
+    height: auto;
+}
+
+.logotitle {
+    font-family: 'Norse', Arial, sans-serif;
+    color: white;
+    font-size: 3em;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 50% 10px 0 0;
+}
+
+.intro {
+    background-color: lightgray;
+    font-size: 20px;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    font-weight: bold;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.formsection {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 30px;
+}
+
+.form {
+    padding: 5% 10%;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#create-account {
+    background-color: #5f0562;
+    color: white;
+    border: 2px solid #5f0562;
+    padding: 1%;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#create-account:hover {
+    background-color: #5f0562;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.login {
+    color: rgb(69, 69, 69);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login:hover {
+    color: rgb(28, 28, 28);
+    background-color: rgba(0, 0, 0, 0.2);
+}

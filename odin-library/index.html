@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Odin Project- Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Library App</h1>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <button onclick="openForm()" class="addbtn btn">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <br>
+            <br>
+            <div id="modal" class="formcontainer">
+                <form class="form" id="getBook" name="addbook">
+                    <h2 class="formtitle">Add your book</h2>
+                    <div class="inputgroup">
+                        <label  for="booktitle">Title: </label>
+                        <input type="text" name="booktitle" id="booktitle">
+                    </div>
+                    <div class="inputgroup">
+                        <label for="bookauthor">Author: </label>
+                        <input type="text" name="bookauthor" id="bookauthor">
+                    </div>
+                    <div class="inputgroup">
+                        <label for="bookpages">How Many Pages: </label>
+                        <input type="number" name="bookpages" id="bookpages">
+                    </div>
+                    <div class="inputgroup read">
+                        <label for="bookread">Have you read?</label>
+                        <select name="bookread" id="bookread">
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <input id="submitBtn" class="submit" type="submit" value="Submit">
+                    <button type="button" class="btncancel" onclick="closeForm()">&times;</button>
+                </form>
+            </div>
+
+            <div id="books">
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="copy">
+            Made with <i class="fa-sharp fa-solid fa-heart fa-beat" style="color: #ff0000;"></i> by Elizabeth Muir 
+        </div>
+        <div class="brand">
+            <a href="https://github.com/xXxLizzy91xXx" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/elizabethmuir91/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://stackoverflow.com/users/22046608/xxxlizzym91xxx" target="_blank"><i class="fa-brands fa-stack-overflow"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/d37e0242e3.js" crossorigin="anonymous"></script>
+    <script src="js.js"></script>
+</body>
+</html>

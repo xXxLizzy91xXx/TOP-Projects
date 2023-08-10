@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', Helvetica, sans-serif;
+}
+
+body {
+    display: grid;
+    min-height: 100%;
+    grid-template-rows: 1fr auto;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(194, 192, 192);
+    padding: 1rem;
+    text-decoration: underline;
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    width: 1.8rem;
+    height: 1.8rem;
+    background: transparent;
+    color: white;
+    position: relative;
+    font-size: 1rem;
+}
+
+/* ADD BOOK */
+.addbtn {
+    background: linear-gradient(336deg, rgba(196,7,148,1) 23%, rgba(0,212,255,1) 100%);
+    border-radius: 50%;
+    height: 3.1rem;
+    width: 3.1rem;
+    font-size: 1.5rem;
+    background-size: 300% 100%;
+    transition: transform 0.5s;
+}
+
+.addbtn:hover {
+    cursor: pointer;
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transform: rotate(90deg) scale(1.2);
+}
+
+.addbtn:focus {
+    outline: none;
+}
+
+/* MODAL */
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#getBook {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #888;
+    border-radius: 50px;
+    position: absolute;
+    float: left;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30rem;
+    height: 30rem;
+    margin: 0;
+    padding: 0;
+}
+
+.btncancel {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.17);
+    background-color: rgb(225, 225, 225);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.btncancel:hover,
+.btncancel:focus {
+    color: black;
+    background-color: #0000005d;
+    border-radius: 25%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* FORM */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+
+.formtitle {
+    font-size: 1.5rem;
+    color: rgb(15, 15, 15);
+    margin-bottom: 15px;
+}
+
+.inputgroup {
+    margin-top: 0.25rem;
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+}
+
+.inputgroup label {
+    display: block;
+    color: rgba(0, 0, 0, 0.719);
+    margin-bottom: 3px;
+}
+
+.inputgroup input {
+    width: 100%;
+    border-radius: 0.37rem;
+    border: 1px solid rgb(55, 65, 81);
+    outline: 0;
+    padding: 0.75rem 1rem;
+}
+
+.inputgroup input:focus {
+    border-color: rgb(167, 139, 250);
+}
+
+.read {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.read label {
+    flex: 0 0 100px;
+    display: block;
+    color: rgba(0, 0, 0, 0.719);
+    margin-bottom: 3px;
+}
+
+.read select {
+    flex: 1; 
+    border-radius: 0.37rem;
+    border: 1px solid rgb(55, 65, 81);
+    outline: 0;
+    padding: 0.5rem 1rem;
+}
+
+
+.submit {
+    background-color: rgb(28, 105, 141);
+    width: 100px;
+    height: 35px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    transition-duration: .2s;
+}
+.submit:hover {
+    cursor: pointer;
+    background-color: rgba(8, 28, 37, 0.863);
+    font-size: 14px;
+    transition-duration: .2s;
+}
+
+/* BOOKS ADDED */
+.book {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+    background-color: aquamarine;
+}
+
+.book:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+    transform: scale(1.1, 1.1);
+}
+
+
+/* FOOTER */
+footer {
+    background-color: rgb(194, 192, 192);
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "copy copy copy copy"
+        "brand brand brand brand";
+    align-items: center;
+}
+
+.fa-brands {
+    font-size: 20px;
+    color: black;
+    margin: 5px 10px;
+}
+
+.fa-brands:hover {
+    background-color: #0000005d;
+    font-size: 18px;
+}
+
+.copy{
+    grid-area: copy;
+}
+
+.brand {
+    grid-area: brand;
+}
