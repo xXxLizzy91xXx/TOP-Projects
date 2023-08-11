@@ -1,4 +1,50 @@
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    'head'
+    'project'
+    'foot';
+    gap: 20px;
+}
+
+.head {
+    grid-area: head;
+}
+
+.project {
+    grid-area: project;
+    margin-left: 50px;
+}
+
+.foot {
+    grid-area: foot;
+    color: white;
+}
+
+.head, .foot {
+    text-align: center;
+    background-color: #008b8b;
+    padding: 10px;
+}
+
+ul > li{
+    list-style: none;
+}
+
+.link {
+    margin: 20px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 25px;
 }
